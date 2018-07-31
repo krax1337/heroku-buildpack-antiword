@@ -13,10 +13,10 @@ cd ${INSTALL_DIR}antiword-0.37
 make
 
 mkdir ${HOME}/.antiword
-cp ${INSTALL_DIR}antiword-0.37/Resources/. ${HOME}/.antiword
-cp ${INSTALL_DIR}antiword-0.37/Resources/. /usr/share/antiword
-cp ${INSTALL_DIR}antiword-0.37/Resources/. /app/.antiword
-cp ${INSTALL_DIR}antiword-0.37/Resources/. {ANTIWORD_DIR}
+cp -r ${INSTALL_DIR}antiword-0.37/Resources/. ${HOME}/.antiword
+cp -r ${INSTALL_DIR}antiword-0.37/Resources/. /usr/share/antiword
+cp -r ${INSTALL_DIR}antiword-0.37/Resources/. /app/.antiword
+cp -r ${INSTALL_DIR}antiword-0.37/Resources/. {ANTIWORD_DIR}
 
 
 echo "Complete!"
